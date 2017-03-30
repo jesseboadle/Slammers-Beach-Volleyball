@@ -87,9 +87,9 @@ body a{
 }
 
 #column1 img{
-    height: 400px;
-    width: 500px;
-    border: solid black 2px;
+    height: 200px;
+    width: 200px;
+    float: right;
 }
 
 #column1 p{
@@ -111,6 +111,8 @@ body a{
 
 #column1 form{
     color: white;
+    margin-bottom: 15px;
+    margin-left: 0;
 }
 
 #column1 table{
@@ -130,6 +132,7 @@ body a{
     width: 80%;
     margin: 8px;
     border: solid black 2px;
+    z-index: 3;
 }
 
 #column2 h1{
@@ -162,10 +165,29 @@ body a{
     border-radius: 25px;
 }
 
+
+#playguide{
+    position: absolute;
+    top: 70px;
+    left: 30%;
+    width: 28%;
+}
+
+#playguide h1{
+    margin-bottom: 20px;
+}
+
+#playguide img{
+    height: 300px;
+    width: 355px;
+    border: 1px black solid;
+    z-index: 3;
+}
+
 #footer {
     position: fixed;
     bottom: 0;
-    text-color: white;
+    color: white;
     font-size: 12px;
     background-color: darkgray;
     clear: both;
@@ -179,4 +201,16 @@ body a{
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+#watermark {
+    color: #F7B733;
+    position: fixed;
+    left: 23%;
+    top: 40%;
+    margin: 0 auto;
+    font-size: 6em;
+    font-family: 'Signika', sans-serif;
+    opacity: 0.1;
+    z-index: 2;
 }
