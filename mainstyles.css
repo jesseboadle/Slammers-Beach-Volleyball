@@ -1,151 +1,182 @@
 /* Global Styles */
-
 body {
     font-family: Verdana, Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
     font-size: .90em;
     background-color: #1c3972;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 body a{
     text-decoration: none;
     color: inherit;
 }
+
+#wrapper{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
 #header {
-    position: absolute;
-    height: 150px;
-    left: 15%;
-    width: 70%;
-    top: 0;
-    margin-bottom: 5px;
+    float: left;
+    min-width: 100%;
+    height: 70px;
     padding: 0;
-    background-color: #1c3972;
+    background-color: black;
 }
 
 #header h1{
-    font-size: 70px;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 2.8em;
     font-family: 'Signika', sans-serif;
     font-style: italic;
     font-weight: bolder;
-    text-align: center;
+    text-align: left;
     color: #F7B733;
     }
 
 /* Navigation Menu */
 
 #menu {
+    padding-top: 5px;
     position: absolute;
-    top: 150px;
-    left: 25%;
+    top: -5px;
+    left: 805px;
+    height: 50px;
+    width: 460px;
+    border: 2px black;
 }
 
 #menu ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    overflow: hidden;
+    margin: 10px;
 }
 
-#menu li {
-    float: left;
+#menu li{
+    display: inline;
+    margin: 8px;
 }
 
-#menu li a {
-    display: block;
+#menu a {
+    display: inline-block;
     color: white;
+    text-decoration: underline;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 1.4em;
+    padding: 7px;
 }
 
-/* Change the link color to #111 (black) on hover */
 #menu li a:hover {
     background-color: #F7B733;
+    border-radius: 12px;
 }
 
 /* Columns */
 #column1{
-    position: absolute;
-    left: 0%;
-    width: 12.5%;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-}
-
-#column2{
-    position: absolute;
-    left: 12.5%;
-    top: 250px;
-    width: 50%;
+    float: left;
+    width: 60%;
     padding-bottom: 10px;
+    padding-left: 8px;
     background-color: #1c3972;
     height: 100%;
 }
 
-#column2 img{
-    float: left;
-    width: 350px;
-    height: 350px;
-    border: 1px black;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: -6px;
-    padding-bottom: -10px;
-    border: black solid 1px;
+#column1 img{
+    height: 400px;
+    width: 500px;
+    border: solid black 2px;
 }
-#column2 p{
+
+#column1 p{
     padding: 5px;
     color: white;
     font-size: 1em;
 }
 
-#column2 h1{
+#column1 a{
+    text-decoration: underline;
+}
+
+#column1 h1{
     font-family: 'Signika', sans-serif;
     padding: 5px;
     color: white;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
-#column3 {
-    position: absolute;
-    left: 62.5%;
-    top: 250px;
-    width: 25%;
+#column1 form{
+    color: white;
+}
+
+#column1 table{
+    color: white;
+}
+
+#column2 {
+    padding-left: 20px;
+    float: right;
+    width: 35%;
     background-color: #1c3972;
     height: 100%;
 }
 
-#signupbutton{
+#column2 img{
+    height: 200px;
+    width: 80%;
+    margin: 8px;
+    border: solid black 2px;
+}
+
+#column2 h1{
+    font-family: 'Signika', sans-serif;
+    text-decoration: underline;
+    font-style: italic;
+    color: white;
+    font-size: 1.6em;
+}
+
+#column2 p, li{
+    color: white;
+    font-size: 1em;
+}
+
+#signupbutton {
+    position: absolute;
+    left: 570px;
+    top: 10px;
+    margin: 0 auto;
     display: block;
     font-size: 20px;
     font-style: italic;
+    text-decoration: underline;
     font-weight: bolder;
-    color: #0c1e36;
+    color: black;
     background-color: #F7B733;
     width: 150px;
     padding: 10px;
     border-radius: 25px;
 }
 
-#announcementbox h1{
-    font-family: 'Signika', sans-serif;
-    text-decoration: underline;
-    font-style: italic;
-    color: white;
+#footer {
+    position: fixed;
+    bottom: 0;
+    text-color: white;
+    font-size: 12px;
+    background-color: darkgray;
+    clear: both;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-width: 100%;
+    height: 20px;
 }
 
-#announcementbox p, li{
-    color: white;
-    font-size: 1em;
-}
-#column4 {
-    position: absolute;
-    left: 87.5%;
-    width: 12.5%;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+#footer p, a{
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
