@@ -13,11 +13,7 @@ body a{
     color: inherit;
 }
 
-#wrapper{
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    }
+/* Header and Footer */
 
 #header {
     float: left;
@@ -36,47 +32,37 @@ body a{
     font-weight: bolder;
     text-align: left;
     color: #F7B733;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    background-color: darkgray;
+    clear: both;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-width: 100%;
+    height: 20px;
+}
+
+#footer p, a{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#footer a{
+    text-decoration: underline;
+}
+
+/* Content Containers */
+#wrapper{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     }
 
-/* Navigation Menu */
-
-#menu {
-    padding-top: 5px;
-    position: absolute;
-    top: -5px;
-    left: 805px;
-    height: 50px;
-    width: 460px;
-    border: 2px black;
-}
-
-#menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px;
-}
-
-#menu li{
-    display: inline;
-    margin: 8px;
-}
-
-#menu a {
-    display: inline-block;
-    color: white;
-    text-decoration: underline;
-    text-align: center;
-    font-family: 'Baloo Bhaina', cursive;
-    font-size: 1.4em;
-    padding: 7px;
-}
-
-#menu li a:hover {
-    background-color: #F7B733;
-    border-radius: 12px;
-}
-
-/* Columns */
 #column1{
     float: left;
     width: 60%;
@@ -87,9 +73,10 @@ body a{
 }
 
 #column1 img{
-    height: 200px;
-    width: 200px;
-    float: right;
+    height: 400px;
+    width: 550px;
+    float: left;
+    border: solid black 2px;
 }
 
 #column1 p{
@@ -130,14 +117,17 @@ body a{
 #column2 img{
     height: 200px;
     width: 80%;
-    margin: 8px;
+    margin: 8px 8px 12px 8px;
     border: solid black 2px;
     z-index: 3;
 }
 
+#column2 a{
+    text-decoration: underline;
+}
+
 #column2 h1{
     font-family: 'Signika', sans-serif;
-    text-decoration: underline;
     font-style: italic;
     color: white;
     font-size: 1.6em;
@@ -148,7 +138,49 @@ body a{
     font-size: 1em;
 }
 
-#signupbutton {
+/* Navigation Menu */
+
+#menu {
+    padding-top: 5px;
+    position: absolute;
+    top: -5px;
+    left: 805px;
+    height: 50px;
+    width: 460px;
+    border: 2px black;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+
+#menu li{
+    display: inline;
+    margin: 8px;
+}
+
+#menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 1.4em;
+    padding: 7px;
+}
+
+#menu li a:hover {
+    background-color: #F7B733;
+    border-radius: 12px;
+}
+
+/* Misc. Objects and Divs */
+
+/* Signup Call to Action */
+
+#signup {
     position: absolute;
     left: 570px;
     top: 10px;
@@ -165,10 +197,10 @@ body a{
     border-radius: 25px;
 }
 
-
+/* Playing Guidelines */
 #playguide{
     position: absolute;
-    top: 70px;
+    top: 123px;
     left: 30%;
     width: 28%;
 }
@@ -180,37 +212,19 @@ body a{
 #playguide img{
     height: 300px;
     width: 355px;
-    border: 1px black solid;
-    z-index: 3;
+    border: 2px black solid;
 }
 
-#footer {
-    position: fixed;
-    bottom: 0;
-    color: white;
-    font-size: 12px;
-    background-color: darkgray;
-    clear: both;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    min-width: 100%;
-    height: 20px;
-}
-
-#footer p, a{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+/* Background Watermark */
 
 #watermark {
+    pointer-events: none;
     color: #F7B733;
     position: fixed;
-    left: 23%;
+    left: 20%;
     top: 40%;
     margin: 0 auto;
     font-size: 6em;
     font-family: 'Signika', sans-serif;
     opacity: 0.1;
-    z-index: 2;
 }
